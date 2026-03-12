@@ -1,6 +1,6 @@
 # Fundus-Image-Disease-Classification-and-Segmentation-using-Modified-U-KAN-Architecture
 
-# RetinaKAN (U-KAN) — Retinal Vessel Segmentation + Disease Classification
+## RetinaKAN (U-KAN) — Retinal Vessel Segmentation + Disease Classification
 
 This repo contains a **PyTorch multi-task model** (`UKAN`) that jointly:
 
@@ -15,9 +15,17 @@ The training pipeline is end-to-end and produces **reproducible outputs** (saved
 - **Reproducible splits**: fixed seed utilities + deterministic behavior; train/val split uses `random_state=42`.
 - **Evaluation artifacts**: confusion matrix + ROC curves saved as PNGs; optional mask export for qualitative review.
 
+## Results
+
+Full results (metrics + plots) are available in the Kaggle notebook:
+
+- `https://www.kaggle.com/code/sushanthreddypotu/fives-ukan5`
+
+This notebook includes the reported segmentation and classification performance (e.g., IoU/Dice, Accuracy/F1, ROC-AUC) and visual outputs such as confusion matrices and ROC curves.
+
 ## Tech stack
 
-- **Python**: 3.8+ recommended  
+- **Python**: 3.8+ recommended
 - **Deep learning**: PyTorch (`torch`, `torchvision`)
 - **Augmentations**: Albumentations + OpenCV
 - **Metrics/plots**: scikit-learn, matplotlib
